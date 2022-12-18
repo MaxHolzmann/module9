@@ -1,0 +1,4 @@
+{
+    "name" : "generateMarkdown",
+    "main" : "./generateMarkdown.js"
+}

@@ -1,54 +1,73 @@
-// TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-const markdown = require('./utils/generateMarkdown.js')
+const fs = require('fs');
+const mark = require('./generateMarkdown');
+
 
 /* 
-GIVEN a command-line application that accepts user input
-WHEN I am prompted for information about my application repository
-THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-WHEN I enter my project title
-THEN this is displayed as the title of the README
-WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
-WHEN I choose a license for my application from a list of options
-THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-WHEN I enter my GitHub username
-THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
-WHEN I enter my email address
-THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
-WHEN I click on the links in the Table of Contents
-THEN I am taken to the corresponding section of the README
+TODO:
+-Table of contents with working links to each section
+-License badge stuff, whatever that is.
+-Change file name to README
+-Put all questiosn into the questions array
+-make licenses a list
 */
 
-// TODO: Create an array of questions for user input
 const questions = [];
 
-// TODO: Create a function to write README file
 const writeToFile = (fileName, data) => {
-
+  fs.writeFile(`${fileName}.md`, `${data}`, (err) => {
+    if(err) throw err;
+    console.log('File Created!')
+  })
 }
 
-// TODO: Create a function to initialize app
-//something with await..
+let hahah;
 async function init  ()  {
-   inquirer
-    .prompt([{
+  let answerPrompt = await inquirer.prompt([{
         name: 'title',
         message: 'What is your project titled?',
         type: 'input'
-         }])
-    .then((answers) => {
-        markdown.generateMarkdown();
-    })
-    .catch((error) => {
-      if (error.isTtyError) {
-        // Prompt couldn't be rendered in the current environment
-      } else {
-        // Something else went wrong
+         }, {
+        name: 'installation',
+        message: "Provide instructions for installation",
+        type: 'input'
+         }, {
+          name: 'description',
+          message: 'Provide a description of your project',
+          type: 'input'
+         }, {
+        name: 'usage',
+        message: 'Provide an example of how your project is used',
+        type: 'input'
+         }, {
+        name: 'contributing',
+        message: 'Provide instructions for contributing to the project, if any.',
+        type: 'input'
+         }, {
+        name: 'tests',
+        message: 'Provide instructions for testing your application',
+        type: 'input',
+         }, {
+        name: 'github',
+        message: 'What is your GitHub username?',
+        type: 'input',
+           },
+           {
+         name: 'email',
+        message: 'What is an email for people to reach you with questions?',
+        type: 'input',
+             },{
+        name: 'license',
+        message: 'What license is your project produced under?',
+        type: 'input'
+         }
+        ])
+         .then(answers => {
+          hahah = answers;
+         })
+        console.log(mark.generateMarkdown(hahah));
+        writeToFile("TestFile", mark.generateMarkdown(hahah))
       }
-    });
-}
 
 // Function call to initialize app
 init();
-
