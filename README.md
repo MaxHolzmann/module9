@@ -1,6 +1,6 @@
-# m
+# max
     
-#Table of Contents
+## Table of Contents
     
 [Description](##-Description)
     
@@ -14,34 +14,34 @@
     
 [Questions](##-Questions)
     
-[License Description](##-License-Description)
+[License Description](##-License-Descriptionnod)
     
 ## Description
     
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+max
     
-m
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/
     
 ## Installation
     
-m
+max
     
 ## Usage
     
-m
+max
     
 ## Testing
     
-m
+max
     
 ## Contributing
     
-m
+max
     
 ## Questions
     
-If you have additional questions, you can find me on [Github](https://github.com/m) or at my email (m))
+If you have additional questions, you can find me on [Github](https://github.com/max) or at my email (max))
     
 ## License Description
     
-A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
+Creative Commons licenses give everyone from individual creators to large institutions a standardized way to grant the public permission to use their creative work under copyright law.
