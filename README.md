@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 
-# m
-=======
-# max
->>>>>>> 7a5c7bbc836c7fbcf1ddb7785ebe6e1a11db9f06
+# README Generator
     
 ## Table of Contents
     
@@ -23,58 +19,30 @@
     
 ## Description
     
-<<<<<<< HEAD
-m
-=======
-max
->>>>>>> 7a5c7bbc836c7fbcf1ddb7785ebe6e1a11db9f06
+This application utilizes Node.js and Inquirer to  create a README file for your projects.
     
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
     
 ## Installation
     
-<<<<<<< HEAD
-m
+Utilize Github's cloning feature to clone this repo onto your local machine and run it using Node.js "node index"
     
 ## Usage
     
-m
+Creating READMEs for Github repos
     
 ## Testing
     
-m
+N/A
     
 ## Contributing
     
-m
+N/A
     
 ## Questions
     
-If you have additional questions, you can find me on [Github](https://github.com/m) or at my email (m))
+If you have additional questions, you can find me on [Github](https://github.com/MaxHolzmann) or at my email (max@holzmann.io))
     
 ## License Description
     
-Creative Commons licenses give everyone from individual creators to large institutions a standardized way to grant the public permission to use their creative work under copyright law.
-=======
-max
-    
-## Usage
-    
-max
-    
-## Testing
-    
-max
-    
-## Contributing
-    
-max
-    
-## Questions
-    
-If you have additional questions, you can find me on [Github](https://github.com/max) or at my email (max))
-    
-## License Description
-    
-Creative Commons licenses give everyone from individual creators to large institutions a standardized way to grant the public permission to use their creative work under copyright law.
->>>>>>> 7a5c7bbc836c7fbcf1ddb7785ebe6e1a11db9f06
+A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
